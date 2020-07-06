@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
       home: QCard(),
     );
   }
@@ -84,14 +85,14 @@ class QCard extends StatelessWidget {
             children: <Widget>[
               subsciptionCard(name: "Netflix", image: "images/netflix.png", backgroundColor: Colors.black54,
               banner: true, date: "30 MAY",),
-              subsciptionCard(name: "Disney Plus", image: "images/disney.png", backgroundColor: Colors.blueGrey,
+              subsciptionCard(name: "Disney Plus", image: "images/disney.png", backgroundColor: Color(0xff00004d),
               banner: false, date: "28 MAY", price: "\$\22.00"),
-              subsciptionCard(name: "Spotify", image: "images/spotify.png", backgroundColor: Colors.green,
+              subsciptionCard(name: "Spotify", image: "images/spotify.png", backgroundColor: Color(0xff00cd00),
               banner: true, date: "30 JUL",),
             ],
           ),
           Container(
-            color: Colors.red,
+            color: Color(0xff5a5a5a),
             width: double.infinity,
             padding: EdgeInsets.all(20),
             child: Column(
